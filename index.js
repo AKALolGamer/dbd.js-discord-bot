@@ -1,0 +1,35 @@
+const dbd = require("dbd.js")
+
+const bot = new dbd.Bot({
+  mobile: false, //U can change to true if u wanna have a mobile status
+  token: "XXXXXXXXXX", //CHANGE with your TOKEN
+  prefix: ['$getServerVar[prefix]', '<@!$clientID>', '<@$clientID>'] 
+})
+
+bot.onMessage({
+  guildOnly: false // commands will work in dms. set "true" for commands to work in guilds only
+})
+
+bot.status({
+    text: `with $serverCount servers`, // put any text
+    type: "PLAYING", // LISTENING, PLAYING, WATCHING, COMPETING
+    status: "online", // online, dnd, idle, invisible
+    time: 75 // amount of times where you can change the bot status (if have multiple statuses)
+    })
+
+  
+   
+
+    bot.musicStartCommand({
+      channel: "$channelID",
+      code: `$sendMessage[{description:▶ Now playing - **[$songInfo[title]\\]($songInfo[url])**}{color:RANDOM}{thumbnail:$songInfo[thumbnail]}{timestamp:ms};no]`
+      })
+
+      bot.musicEndCommand({
+        channel: "$channelID",
+        code: `$sendMessage[{description:⏹ There's no one playing music anymore. I'm leaving the Voice Channel!}{color:RANDOM}{delete:10s};no]`
+        })
+
+    bot.variables(require('./commands/vars.js'))
+
+    bot.loadCommands('./commands')
