@@ -2,7 +2,7 @@
 
 A Multipurpose Discord Bot with dbd.js
 
-### ⛓️ Installation and Setup
+# ⛓️ Installation and Setup
 - Go to `index.js` and keep your status and token 
 > How to do it?
 ```js
@@ -70,3 +70,63 @@ module.exports = ({
 - Fill with your steps
 After that go to terminal and type `npm i dbd.js@2.2.6` and `npm i dbd.db` and after do `npm i dbdjs.db` and to start the bot type `node index.js`
     
+# 🤖 Commands
+🔨 Utility
+```
+help
+command
+invite
+setprefix
+```
+⬆️ Leveling
+```
+leveling enable/disable
+levels
+exp
+expcooldown
+```
+💰 Economy
+```
+daily
+work
+beg
+pay
+balance
+leaderboard
+award (Bot Developer only command)
+```
+ℹ️ Infomation
+```
+userinfo
+channelinfo
+roleinfo
+serverinfo
+botinfo
+developerinfo
+```
+🎵 Music
+```
+play
+stop
+pause
+resume
+skip
+skipto
+queue
+lyrics
+volume
+loopqueue
+loopsong
+nowplaying
+```
+🌌 Miscellaneous
+```
+avatar
+membercount
+emojicount
+poll
+```
+💻 Developer
+```
+eval
+```
