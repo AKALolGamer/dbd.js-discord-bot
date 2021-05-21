@@ -68,7 +68,7 @@ module.exports = ({
   })
 ```
 - Fill with your steps
-After that go to terminal and type `npm i dbd.js@2.2.6` and `npm i dbd.db` and after do `npm i dbdjs.db` and to start the bot type `node index.js`
+After that go to terminal and type `npm innit --y` and `npm i dbd.js@2.2.6` and `npm i dbd.db` and after do `npm i dbdjs.db` and to start the bot type `node index.js`
     
 # 🤖 Commands
 🔨 Utility
